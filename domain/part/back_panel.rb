@@ -1,11 +1,11 @@
 module CabinetSystem
     module Part
         class BackPanel < Panel
-            attr_reader :width, :height
-
             def initialize(width, height)
-                @width = width
-                @height = height
+                super(
+                    length: height,
+                    width: width
+                )
             end
         end
     end

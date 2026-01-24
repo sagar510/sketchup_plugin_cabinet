@@ -6,7 +6,7 @@ module CabinetSystem
             super(width, height, depth)
         end
 
-        def panels
+        def parts
         [
             Part::BottomPanel.new(@width, @depth),
             Part::TopPanel.new(@width, @depth),

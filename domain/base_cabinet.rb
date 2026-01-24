@@ -8,7 +8,7 @@ module CabinetSystem
       @depth = depth
     end
 
-    def panels
+    def parts
         raise NotImplementedError, "Subclasses must implement the panels method"
     end
   end

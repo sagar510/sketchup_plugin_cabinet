@@ -3,7 +3,7 @@ module CabinetSystem
         class PartBuilder
             def self.draw(entities, part)
                 Geometry::Panel.draw(
-                    entities, part.width, part.height, part.thickness)
+                    entities, part.length, part.width, part.thickness)
             end
         end
     end

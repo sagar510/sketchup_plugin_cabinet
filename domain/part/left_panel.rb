@@ -1,11 +1,11 @@
 module CabinetSystem
     module Part
         class LeftPanel < Panel
-            attr_reader :depth, :height
-
             def initialize(depth, height)
-                @depth = depth
-                @height = height
+                super(
+                    length: height,
+                    width: depth
+                )
             end
         end
     end

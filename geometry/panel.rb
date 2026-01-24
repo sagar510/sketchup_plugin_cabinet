@@ -1,8 +1,8 @@
 module CabinetSystem 
     module Geometry 
         class Panel
-            def self.draw(entities, width, height, thickness)
-                Box.draw(entities, width, height, thickness)
+            def self.draw(entities, length, width, thickness)
+                Box.draw(entities, length, width, thickness)
             end
         end
     end

@@ -1,9 +1,11 @@
 module CabinetSystem
     module Part
         class Panel 
-            attr_reader :thickness, :color
+            attr_reader :length, :width, :thickness, :color
 
-            def initialize
+            def initialize(length:, width:)
+                @length = length
+                @width = width
                 @thickness = Config::Panel::THICKNESS
                 @color = Config::Panel::COLOR
             end
